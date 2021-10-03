@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@-webkit-keyframes wejście {
+  from {
+    width: calc(405% + 1.3px);
+  }
+}
+@keyframes wejście {
+  from {
+    width: calc(405% + 1.3px);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .intro-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6db1d8), to(#4480f0));
+  background-image: linear-gradient(to right, #6db1d8, #4480f0);
+}
+
+body .intro-window .name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: Montserrat;
+  font-size: 4vw;
+}
+
+body .intro-window .name-container .name {
+  letter-spacing: 3px;
+}
+
+body .intro-window .name-container .name::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+}
+
+body .intro-window .name-container .title {
+  font-weight: bold;
+}
+
+body .intro-window .custom-shape-divider-bottom-1633169821 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 102%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-animation: wejście 1.5s ease-out;
+          animation: wejście 1.5s ease-out;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body .intro-window .custom-shape-divider-bottom-1633169821 svg {
+  position: relative;
+  display: block;
+  width: calc(175% + 1.3px);
+  height: 325px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body .intro-window .custom-shape-divider-bottom-1633169821 .shape-fill {
+  fill: #FFFFFF;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body .center-window {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=index.css.map */
