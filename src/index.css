@@ -76,6 +76,8 @@ body .intro-window .name-container {
   color: white;
   font-family: Montserrat;
   font-size: 4vw;
+  -webkit-animation: fade-in 1.5s;
+          animation: fade-in 1.5s;
 }
 
 body .intro-window .name-container .name {
@@ -98,7 +100,7 @@ body .intro-window .custom-shape-divider-bottom-1633169821 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 102%;
+  width: 100%;
   overflow: hidden;
   line-height: 0;
   -webkit-animation: wejście 1.5s ease-out;
@@ -131,6 +133,14 @@ body .center-window {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body .center-window .info {
+  width: 45%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -138,5 +148,16 @@ body .center-window {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
+}
+
+body .center-window .info h1 {
+  font-family: Montserrat;
+  letter-spacing: 3px;
+}
+
+body .center-window .info p {
+  font-size: 25px;
+  font-family: Montserrat;
 }
 /*# sourceMappingURL=index.css.map */

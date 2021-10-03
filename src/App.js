@@ -10,7 +10,7 @@ function App() {
 
 function Window(){
     useEffect(() => {
-      AOS.init({once: true});
+      AOS.init();
     }, []);
 
     return(
@@ -27,7 +27,14 @@ function Window(){
           </div>
         </div>
         <div className="center-window">
-            
+            <div className="info" data-aos="fade-right">
+                <h1>What do I do?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue eget arcu dictum varius duis at consectetur. Enim ut sem viverra aliquet eget sit amet tellus. Vel eros donec ac odio tempor orci dapibus. Lobortis feugiat vivamus at augue eget. Ut aliquam purus sit amet luctus venenatis lectus. Integer enim neque volutpat ac. Tortor posuere ac ut consequat. Vitae et leo duis ut diam. Placerat duis ultricies lacus sed turpis. Pharetra pharetra massa massa ultricies mi. Aliquet porttitor lacus luctus accumsan tortor. Nec feugiat nisl pretium fusce id velit ut tortor.</p>
+            </div>
+            <div className="info" data-aos="fade-left">
+                <h1>What can I offer?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero. Vitae purus faucibus ornare suspendisse. Sollicitudin tempor id eu nisl nunc mi ipsum. Leo a diam sollicitudin tempor id eu nisl nunc. Iaculis urna id volutpat lacus. Nulla porttitor massa id neque aliquam. Nibh cras pulvinar mattis nunc sed. Id faucibus nisl tincidunt eget. Neque aliquam vestibulum morbi blandit cursus risus at. Proin sed libero enim sed faucibus turpis. Sed turpis tincidunt id aliquet risus feugiat. Enim nec dui nunc mattis enim ut. Turpis egestas pretium aenean pharetra magna. Et magnis dis parturient montes nascetur.</p>
+            </div>
         </div>
       </>
     );

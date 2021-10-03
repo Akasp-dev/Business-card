@@ -33,6 +33,7 @@ body{
             color: white;
             font-family: Montserrat;
             font-size: 4vw;
+            animation: fade-in 1.5s;
             .name{
                 letter-spacing: 3px;
                 &::after{
@@ -51,7 +52,7 @@ body{
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 102%;
+            width: 100%;
             overflow: hidden;
             line-height: 0;
             animation: wejście 1.5s ease-out;
@@ -75,7 +76,21 @@ body{
         background: white;
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
+        .info{
+            width: 45%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            h1{
+                font-family: Montserrat;
+                letter-spacing: 3px;
+            }
+            p{
+                font-size: 25px;
+                font-family: Montserrat;
+            }
+        }
     }
 }
